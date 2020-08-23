@@ -2739,19 +2739,19 @@ img {
 			<a href="#mochiya98date-only" id="mochiya98date-only" style="color: inherit; text-decoration: none;">
 				<h1>@mochiya98/date-only</h1>
 			</a>
-			<p><a href="https://www.npmjs.com/package/@mochiya98/date-only"><img src="https://img.shields.io/npm/v/mochiya98/date-only?style=flat-square" alt="npm (scoped)"></a> <a href="https://travis-ci.com/github/mochiya98/date-only"><img src="https://img.shields.io/travis/com/mochiya98/date-only?style=flat-square" alt="Travis (.com)"></a> <a href="https://coveralls.io/github/mochiya98/date-only"><img src="https://img.shields.io/coveralls/github/mochiya98/date-only?style=flat-square" alt="Coveralls github"></a> <img src="https://img.shields.io/badge/license-MIT-green.svg?style=flat-square" alt="license MIT"></p>
+			<p><a href="https://www.npmjs.com/package/@mochiya98/date-only"><img src="https://img.shields.io/npm/v/@mochiya98/date-only?style=flat-square" alt="npm (scoped)"></a> <a href="https://travis-ci.com/github/mochiya98/date-only"><img src="https://img.shields.io/travis/com/mochiya98/date-only?style=flat-square" alt="Travis (.com)"></a> <a href="https://coveralls.io/github/mochiya98/date-only"><img src="https://img.shields.io/coveralls/github/mochiya98/date-only?style=flat-square" alt="Coveralls github"></a> <img src="https://img.shields.io/badge/license-MIT-green.svg?style=flat-square" alt="license MIT"></p>
 			<p>manage a calendar date easily</p>
 			<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 				<h2>Usage</h2>
 			</a>
 			<pre><code class="language-bash">npm i @mochiya98/date-only</code></pre>
-			<pre><code class="language-tsx">import { DateOnly } from &quot;@mochiya98/date-only&quot;;
+			<pre><code class="language-ts"><span class="hljs-keyword">import</span> { DateOnly } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@mochiya98/date-only&quot;</span>;
 
-const date = DateOnly.fromText(&quot;08/01/2020&quot;, &quot;MM/DD/YYYY&quot;);
-console.log(date.toString()); // &quot;2020-08-01&quot;
+<span class="hljs-keyword">const</span> date = DateOnly.fromText(<span class="hljs-string">&quot;08/01/2020&quot;</span>, <span class="hljs-string">&quot;MM/DD/YYYY&quot;</span>);
+<span class="hljs-built_in">console</span>.log(date.toString()); <span class="hljs-comment">// &quot;2020-08-01&quot;</span>
 
-const tomorrow = date.add(1);
-console.log(tomorrow.toString()); // &quot;2020-08-02&quot;</code></pre>
+<span class="hljs-keyword">const</span> tomorrow = date.add(<span class="hljs-number">1</span>);
+<span class="hljs-built_in">console</span>.log(tomorrow.toString()); <span class="hljs-comment">// &quot;2020-08-02&quot;</span></code></pre>
 			<p>see more details: <a href="https://github.m98.be/date-only/">docs</a></p>
 		</div>
 		<div style="position:relative;"><a name="typedoc-main-index" class="tsd-anchor"></a></div>
