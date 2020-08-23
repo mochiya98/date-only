@@ -50,6 +50,10 @@ export class DateOnly {
   static fromYmd(year: number, month: number, day: number): DateOnly {
     return new DateOnly(year, month, day);
   }
+  static from(copyFrom: DateOnly): DateOnly;
+  static from(date: Date, useUTC?: boolean): DateOnly;
+  static from(dateText: string, format?: string): DateOnly;
+  static from(year: number, month: number, day: number): DateOnly;
   static from(...argv: unknown[]): DateOnly {
     //@ts-ignore
     return new DateOnly(...argv);
