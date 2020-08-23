@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "stable"
+  - "lts/*"
+env:
+  - TZ='America/Anchorage'
+  - TZ='Etc/GMT'
+  - TZ='Asia/Tokyo'
+script:
+  - npm t && npx coveralls < coverage/lcov.info
